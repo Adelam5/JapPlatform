@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ededed;
+  box-sizing: border-box;
+  overflow-y: visible;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+table {
+  max-height: 60vh;
+}
+
+tr.Lecture {
+  background-color: #ebf3fb;
+}
+
+tr.Event {
+  background-color: rgb(250, 236, 238);
+}
+
+th {
+  display: inline-flexbox;
+  justify-content: space-between;
+  white-space: nowrap;
+  min-width: 130px;
+}
+
+th > i {
+  float: right;
+  margin-right: 1rem;
+}
+
+td {
+  min-width: 100px;
+  padding: 0.1rem 0.1rem !important;
+  white-space: nowrap;
+}
+td.wrap {
+  white-space: normal;
+}
+
+.comments {
+  height: 88vh;
+}
+.comments > div {
+  overflow-y: auto;
+}
+
+textarea {
+  height: 400px;
+}
+
+.table-container-2 {
+  min-height: 300px;
+}
+.table-container-5 {
+  min-height: 430px;
+}
+.table-container-10 {
+  min-height: 630px;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+@media screen and (min-width: 390px) {
+  .filter-form {
+    flex-direction: row;
+    width: 80%;
+  }
+}
+
+.pagination-resp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 390px) {
+  .pagination-resp {
+    flex-direction: row;
+  }
+}
